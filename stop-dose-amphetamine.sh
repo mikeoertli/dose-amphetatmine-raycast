@@ -11,6 +11,7 @@
 # @raycast.mode silent
 # @raycast.packageName Amphetamine
 # @raycast.schemaVersion 1
+# @raycast.icon 🛑
 
 osascript -e 'tell application "Amphetamine" to end session'
 

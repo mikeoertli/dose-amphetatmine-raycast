@@ -11,5 +11,6 @@
 # @raycast.mode silent
 # @raycast.packageName Amphetamine
 # @raycast.schemaVersion 1
+# @raycast.icon 💊
 
 $(osascript -e 'tell application "Amphetamine" to start new session with options {duration:4, interval:hours, displaySleepAllowed:false}') && echo "Started Amphetamine for 4 hours" || echo "❌ Error starting Amphetamine 💊"
