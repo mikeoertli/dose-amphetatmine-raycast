@@ -5,11 +5,11 @@
 
 # Dose (Amphetamine) for Raycast
 
-This is a collection of scripts for Raycast to control the Amphetamine macOS app.
+This is a collection of scripts for [Raycast](https://www.raycast.com) to control the [Amphetamine macOS app](https://apps.apple.com/us/app/amphetamine/id937984704?mt=12).
 
 It can start an Amphetamine session for:
 
-* 1, 2, 4, 8, 10, or 12 hour(s)
+* 1, 2, 4, 8, or 12 hour(s)
 * indefinitely
 * for any duration (`x` hours or minutes)
 * until 5pm
@@ -37,6 +37,14 @@ Some inspiaration was taken from the [Alfred Dose extension](https://www.thought
 * There is a lot of duplication
 * Shell scripts are totally linear, no functions used
 * Assumes BSD based `date` utility
+
+## Disclaimer
+
+This project is not in any way affiliated with Raycast or Amphetamine.
+
+Raycast branding and logo are property of [Raycast](https://www.raycast.com).
+
+Amphetamine branding and logo are property of [Amphetamine](https://apps.apple.com/us/app/amphetamine/id937984704?mt=12).
 
 ## Contact
 
