@@ -29,4 +29,4 @@ delta_min=$(echo "$((total_end_minutes - total_now_minutes))")
 
 # Opted for the simpler solution that is subject to injection attack.... but since we control the variables here, it seemed safe.
 # Useful resource for getting variable working in oascript call: https://stackoverflow.com/questions/23923017/osascript-using-bash-variable-with-a-space
-$(osascript -e 'tell application "Amphetamine" to start new session with options {duration:"'"$delta_min"'", interval:minutes, displaySleepAllowed:false}') && echo "Started Amphetamine until 5PM" || echo "❌ Error starting Amphetamine 💊"
+$(osascript -e 'tell application "Amphetamine" to start new session with options {duration:"'"$delta_min"'", interval:minutes, displaySleepAllowed:false}') && echo "Started Amphetamine until 5:00 PM" || echo "❌ Error starting Amphetamine 💊"

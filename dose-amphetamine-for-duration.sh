@@ -24,7 +24,7 @@ else
     duration_min=$((10#$duration_min*60))
 fi
 
-end_time=$(date -v +${duration_min}M +"%H:%M %p")
+end_time=$(date -v +${duration_min}M +"%l:%M %p")
 
 # Only for debugging
 # echo "Duration: ${duration_min} min  -- end time ${end_time}"
