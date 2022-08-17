@@ -15,6 +15,13 @@ It can start an Amphetamine session for:
 * until 5pm
 * until time `<param>`
 
+## Demo
+
+<p align="center">
+<img alt="Demo of Raycast Amphetamine Control" src="images/raycast-amphetamine-demo.gif"/>
+</p>
+
+
 ## Installation
 
 <p align="center">
