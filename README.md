@@ -1,6 +1,6 @@
 
 <p align="center">
-<img width="200" alt="Raycast Amphetamine Control" src="images/amphetamine.png"/>
+<img width="500" alt="Raycast Amphetamine Control" src="images/raycast_and_amphetamine.png"/>
 </p>
 
 # Dose (Amphetamine) for Raycast
