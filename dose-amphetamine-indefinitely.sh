@@ -13,4 +13,4 @@
 # @raycast.schemaVersion 1
 # @raycast.icon 💊
 
-osascript -e 'tell application "Amphetamine" to start new session' && echo "💊 Started Amphetamine indefinitely" || echo "❌ Error starting Amphetamine 💊"
+osascript -e 'tell application "Amphetamine" to start new session' && echo "Started Amphetamine indefinitely" || echo "❌ Error starting Amphetamine 💊"

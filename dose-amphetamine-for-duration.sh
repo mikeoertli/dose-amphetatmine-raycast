@@ -16,8 +16,10 @@
 
 
 duration=$1
-duration_min=$(sed 's/[a-zA-Z]//g' <<< $duration)
-if [[ $duration != *m* ]]; then
+duration_min=$(sed 's/[a-zA-Z]*//g' <<< $duration)
+if [[ $duration == *m* ]]; then
+    duration_min=$((10#$duration_min))
+else
     # Assume units of hours
     duration_min=$((10#$duration_min*60))
 fi
@@ -29,4 +31,4 @@ end_time=$(date -v +${duration_min}M +"%H:%M %p")
 
 # Opted for the simpler solution that is theoretically subject to injection attack....
 # Useful resource for getting variable working in oascript call: https://stackoverflow.com/questions/23923017/osascript-using-bash-variable-with-a-space
-$(osascript -e 'tell application "Amphetamine" to start new session with options {duration:"'"$duration"'", interval:minutes, displaySleepAllowed:false}') && echo "Started Amphetamine until $end_time" || echo "❌ Error starting Amphetamine 💊"
+$(osascript -e 'tell application "Amphetamine" to start new session with options {duration:"'"$duration_min"'", interval:minutes, displaySleepAllowed:false}') && echo "Started Amphetamine until $end_time" || echo "❌ Error starting Amphetamine 💊"

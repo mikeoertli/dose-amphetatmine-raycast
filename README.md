@@ -29,7 +29,7 @@ I wanted to have discrete Raycast commands available for commonly used durations
 
 ## Inspiration
 
-Some inspiaration was taken from the [Alfred Dose extension](https://www.thoughtasylum.com/2021/03/22/alfred-workflow-amphetamine-app/), but this is a much more rudimentary solution.
+Some inspiaration was taken from the [Alfred Dose extension](https://www.thoughtasylum.com/2021/03/22/alfred-workflow-amphetamine-app/).
 
 ## Known Issues
 

@@ -25,7 +25,7 @@ IFS=: read now_hour now_min <<< "$now"
 if [[ $end == *"p"* ]] || [[ $end == *"a"* ]] ; then
     ([[ $end == *"a" ]] || [[ $end == *"p" ]]) && end="${end}m"
     
-    end_time_only=$(sed 's/[a-zA-Z]//g' <<< $end)
+    end_time_only=$(sed 's/[a-zA-Z]*//g' <<< $end)
     length=${#end_time_only}
 
     # 1 or 2 indicates we got a simple time like "5pm" - i.e. no minutes
